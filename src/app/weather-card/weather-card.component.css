@@ -1,0 +1,47 @@
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 20px;
+    text-align: center;
+    height: 130px;
+    width: 300px;
+    position: relative;
+    box-shadow: 5px 5px lightgrey;
+    border-radius: 5px;
+  }
+
+  p{
+    font-weight: 12px;
+  }
+
+  .rightCircle{ 
+    position:absolute; 
+    width:30px; 
+    height:30px; 
+    border-radius:10%;  
+    right:0; 
+    top:0;
+    cursor: pointer;
+  }
+
+  .input{
+    width: 200px; 
+    height: 30px; 
+    font-size: 20px; 
+    text-transform: capitalize;
+  }
+
+  #error-msg{
+    color: red;
+    font-size: 18px;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  
