@@ -1,7 +1,7 @@
 <div class="grid-item" 
     (click)="clicked=true" 
-    [ngStyle]="{'background':'url(' + getBackground() + ')','background-size':'contain'}" >
-<div class="rightCircle" 
+    [ngStyle]="{'background':'url(' + getBackground() + ')','background-attachment':'fixed','height':'200px','width':'320px'}" >
+<div class="editIcon" 
     (click)="clicked=true; fetchedData=false">
 <span class="glyphicon glyphicon-edit"></span>
 </div>

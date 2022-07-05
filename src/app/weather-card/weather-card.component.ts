@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './weather-card.component.html',
   styleUrls: ['./weather-card.component.css']
 })
-export class WeatherCardComponent implements OnInit {
-  constructor(private http:HttpClient){}
 
-  title = 'weather-app';
+export class WeatherCardComponent implements OnInit {
+  constructor(private http : HttpClient){}
+
   cityName: string = '';
   result: any;
   fetchedData = false;
