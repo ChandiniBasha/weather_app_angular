@@ -8,7 +8,7 @@
 <input placeholder="Enter City Name" class="input" #box 
     *ngIf="clicked && !fetchedData"
     (keyup.enter)="weatherData($event)" required>
-    <p *ngIf="fetchedData"><br>
+    <p *ngIf="fetchedData">
     {{result.name}}<br>
     {{(result.main.temp - 273.15).toFixed(2)}}°C<br>
     Condition : {{result.weather[0].main}}<br>

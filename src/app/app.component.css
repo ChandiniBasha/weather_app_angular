@@ -1,24 +1,19 @@
-body{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 h1{
   text-align: center;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
 }
 
 .grid-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 86px;
+  margin: 120px;
   margin-top: 20px;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  width: 85vw;
+  height: 85vh;
+  width: 80vw;
   background-color:aliceblue;
   border-radius: 15px;
 }

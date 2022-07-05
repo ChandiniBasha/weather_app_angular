@@ -7,9 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./weather-card.component.css']
 })
 export class WeatherCardComponent implements OnInit {
-  constructor(private http:HttpClient){
+  constructor(private http:HttpClient){}
 
-  }
   title = 'weather-app';
   cityName: string = '';
   result: any;
@@ -18,9 +17,7 @@ export class WeatherCardComponent implements OnInit {
   clicked = false;
   error : any;
 
-ngOnInit(): void {
-    
-}
+ngOnInit(): void {}
 
   weatherData(event: any) {
     this.cityName = event.target.value;
@@ -31,6 +28,7 @@ ngOnInit(): void {
       this.weather = this.result.weather[0].main;
       console.log(this.result);
     },
+    
     (error)=>{
       this.error = error;
       console.log(error,'error');
@@ -61,6 +59,8 @@ ngOnInit(): void {
         return 'https://images.unsplash.com/photo-1485594050903-8e8ee7b071a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80'
       case 'Clear':
         return 'https://images.unsplash.com/photo-1454335459109-cd8a2c230bc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80'
+      case 'Mist':
+        return 'https://images.unsplash.com/photo-1485236715568-ddc5ee6ca227?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
       default:
         return '';
     }
